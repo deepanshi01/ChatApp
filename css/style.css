@@ -1,6 +1,7 @@
 body {
-    height : 100vh;
+    height : 122vh;
     background-image: linear-gradient(rgb(255, 255, 255), rgb(64, 209, 153));
+    overflow : hidden;  
 }
 .logo {
     display : block;
@@ -52,10 +53,10 @@ h1{
     align-items: center;
 }
 #messageInp{
-    width: 80%;
+    width: 83%;
     border : 2px solid black;
     border-radius: 6px;
-    height : 34px;
+    height : 39px;
     font-size : 22px;
 }
 .btn {
@@ -67,4 +68,72 @@ h1{
     cursor : pointer;
     font-size: 20px;
     font-family: cursive;
+}
+
+
+@media only screen and (max-width: 681px ){
+    #messageInp{
+        width:81%;
+    }
+           .btn{
+              width: 11%; 
+          } 
+         
+}
+@media only screen and  (max-width: 570px ){
+    #messageInp{
+        width:79%;
+    }
+     .btn{
+        width: 13%; 
+    } 
+}
+
+@media only screen and (max-width: 476px ){
+    #messageInp{
+        width:77%;
+        height: 35px;
+    }
+     .btn{
+        width: 15%; 
+        height: 35px;
+        font-size: 17px;
+    } 
+    body{
+        height: 135vh;
+    }
+}
+@media only screen and (max-width: 426px ){
+    #messageInp{
+        width:75%;
+    }
+     .btn{
+        width: 17%;
+        font-size: 18px; 
+    } 
+}
+@media only screen and (max-width: 387px ){
+    #messageInp{
+        width:73%;
+    }
+     .btn{
+        width: 19%; 
+    } 
+}
+@media only screen and (max-width: 357px ){
+    #messageInp{
+        width:71%;
+    }
+     .btn{
+        width: 21%; 
+    } 
+}
+@media only screen and (min-width: 277px) and (max-width: 317px ){
+    #messageInp{
+        width:69%;
+    }
+     .btn{
+        width: 23%; 
+    } 
+  
 }
